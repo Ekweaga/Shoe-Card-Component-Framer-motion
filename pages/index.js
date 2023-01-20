@@ -68,7 +68,7 @@ export default function Home() {
       <div className='flex items-center justify-center h-[100%] w-[100%] '>
       
 
-       <motion.div className='bg-black w-[280px] h-[470px] mt-[100px] cardBox relative flex flex-col rounded-2xl cursor-grab'>
+       <motion.div className='bg-black w-[280px] h-[470px] mt-[100px] cardBox relative flex flex-col rounded-2xl cursor-grab' drag dragConstraints={{top:-124,right:125,bottom:125,left:-125}} dragTransition={{bounceStiffness:600,bounceDamping:20}} dragElastic={0.5}>
 
         
          <div className="topContainer " style={{flex:1.2,justifyContent:'flex-end',display:'flex',flexDirection:'column',width:'100%',paddingTop:'1em',paddingBottom:'1em',paddingLeft:'15px',paddingRight:'15px'}}>
